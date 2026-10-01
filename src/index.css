@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background-color: #f5f7fb;
+  color: #212529;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 64px;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  margin-left: 8px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  min-height: 130px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  background-color: #eaf2ff;
+}
+
+.empty-icon {
+  font-size: 50px;
+}
+
+.employee-avatar {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0d6efd;
+  color: white;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.table td {
+  white-space: nowrap;
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1050;
+
+  padding: 20px;
+}
+
+.delete-modal {
+  width: 100%;
+  max-width: 450px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.form-control,
+.form-select {
+  min-height: 45px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-header .btn {
+    width: 100%;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+}
